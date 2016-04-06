@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+
+	<!--[if IE 8 ]>      <body class="ie8">          <![endif]-->
+	<!--[if IE 9 ]>      <body class="ie9">          <![endif]-->
+	<!--[if (gt IE 9) ]> <body class="modern">       <![endif]-->
+	<!--[!(IE)]><!-->    <body class="notIE modern"> <!--<![endif]-->
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta name="viewport" content="width=device-width"/>
+
+
+	<title>Item.fullName</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../ecommerce/stylesheets/ecommerce.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" src="http://normalize-css.googlecode.com/svn/trunk/normalize.css" />
+
+	<script type="text/javascript" src="../ecommerce/javascript/main.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	<!--[if lt IE 8]><script src="bower_components/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+</head>
+
+<body>
+	<div class="wrapper">
+		
+		<h2 class="upper">Nautical T-shirt</h2>
+
+		<img class="product-image" src="/images/t-shirt-1024.png"  />
+
+<!-- ////////////////////////// -->
+
+		<form name="item-details" class="item">
+			<fieldset> 
+				<div class="item-properties">
+					<label for="item-colors" class="color">Color
+						<ul class="item-colors">
+
+					 <!-- It seems like a list of Item.colors will be printed and one can 
+						   write their values into some variables, like this: 
+						   
+						   Item.colors.map do |color-code| -->
+
+			 		 <!-- So, one can write values for background-color and id from model. 
+			 		 		Then by cliking on color we can insert id value into the hidden input.  
+			 		 		For now I hardcoded Item colors just to display them. -->
+							
+							<li class="item-color color-1" style="background-color: color-code;" id="color-code">
+								<div class="inner"></div>
+								<input type="hidden" value=""/>
+							</li>
+					   	
+						   	<li class="item-color color-2" style="background-color: color-code;" id="color-code">
+						   		<div class="inner"></div>
+						   		<input type="hidden"/>
+						   	</li>
+						   	
+						   	<li class="item-color color-3" style="background-color: color-code;" id="color-code">
+						   		<div class="inner"></div>
+						   		<input type="hidden"/>
+						   	</li>
+
+						   	<li class="item-color color-4" style="background-color: color-code;" id="color-code">
+						   		<div class="inner"></div>
+						   		<input type="hidden"/>
+						   	</li>
+						<!-- //	end -->
+						</ul>
+					</label>
+
+					<label for="item-size" class="size">Size
+						<div class="select-menu">
+							<select id="item-size">
+			  					<option value="" id="placeholder" disabled selected style="display:none;">Select one</option>
+			  					<option value="S">Small</option>
+			  					<option value="M">Medium</option>
+			  					<option value="L">Large</option>
+			  					<option value="XL">Extra Large</option>
+							</select>
+						</div>
+					</label>
+
+					<label for="item-quantity" class="quantity">Quantity
+						<div class="select-menu">
+							<select id="item-quantity">
+			  					<option value="1">1</option>
+			  					<option value="2">2</option>
+			  					<option value="3">3</option>
+			  					<option value="4">4</option>
+							</select>
+						</div>
+					</label>
+
+					<!-- !!!!!!!!!! -->
+					<input id="item-id" type="hidden" value="Item.id"></input>
+				</div>
+
+				<div class="buy-section">
+	    
+				    <p class="availability">availability: <span>request</span></p>
+
+					<div id="item-price"> 
+					    <span class="full-price">$37.59</span>
+					    <span class="discount-price">$30.00</span>
+					</div>
+
+				    <button type="submit" id="add-to-card">Add to Cart</button> 
+
+			    </div>
+		  </fieldset>
+		</form>
+
+<!-- ////////////////////////// -->
+
+		
+
+		<div class="product-info">
+			
+			<span class="item-fullname">Nautical print T-shirt</span></br>
+			<span class="item-code">TH3863-00</span>
+
+			<p id="item-description">An anchor and marine flags  accent the chest of this  nautical-inspired Lacoste T-shirt. A comfortable piece perfect for urban adventures.</p>
+
+			<div class="dropdown">
+
+				<!--[if !IE 8]><!-->	
+			
+				<a href="#" class="read-more">Read more<i class="fa fa-angle-down" style="margin-left: 15px; font-weight:bold; font-size:20px; vertical-align:middle;" ></i></b></a>
+				
+				<!--<![endif]-->
+
+				<ul class="dropdown-menu">
+
+				</ul>
+
+			</div>
+			
+		</div>
+
+		<div class="share">
+
+			<span class="share-label">Share:</span>
+			
+			<span class="facebook"><a href="#"></a></span>
+			<span class="twitter"><a href="#"></a></span>
+			<span class="google"><a href="#"></a></span>
+			<span class="pinterest"><a href="#"></a></span>
+		</div>
+
+		<div class="slider">
+			
+			<div class="slide one active-slide" id="first-slide">
+				<a href="#">
+					<div class="read-also">Read the story</div>
+					<div class="text">
+						<p>Our iconic blazer</p>
+					</div>
+
+					<!--[if IE 8]>
+					
+					<![endif]-->
+
+				</a>
+				<img src="/images/model-pic-1-big.png">
+			</div>
+
+			<div class="slide two" id="second-slide">
+				<a href="#">
+					<div class="text">
+						<p>Our iconic blazer</p>
+					</div>
+					<div class="read-also">Read the story</div>
+				</a>
+				<img src="/images/model-pic-2-big.png">
+			</div>
+
+			<div class="slide three" id="third-slide">
+				<a href="#">
+					<div class="text">
+						<p>Our iconic blazer</p>
+					</div>
+					<div class="read-also">Read the story</div>
+				</a>
+				<img src="/images/model-pic-3-big.png">
+			</div>
+		</div>
+
+		<div class="slider-nav">
+			<img src="/images/arrow-left.png" alt="previous" id="prev" class="arrow-prev">
+			<img src="/images/arrow-right.png" alt="next" id="next" class="arrow-next"  />
+		</div>
+	</div>
+
+</body>
+</html>

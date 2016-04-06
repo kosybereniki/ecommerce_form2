@@ -1,0 +1,44 @@
+
+{
+  "items": {
+    "item": [
+      {
+        "id": "01",
+        "name": "Lacoste Yachting",
+        "src": "/",
+        "characteristics": ["Regular fit", 
+                            "Crew neck", 
+                            "Lacoste Yachting branding on chest", 
+                            "Other", 
+                            "Round neck", 
+                            "COTTON (100%)"]
+      },
+      {
+        "id": "02",
+        "name": "Lacoste Yachting 2",
+        "src": "/",
+        "characteristics": ["Regular fit", 
+                            "Crew neck", 
+                            "Lacoste Yachting branding on chest", 
+                            "Other", 
+                            "Round neck", 
+                            "COTTON (100%)"]
+      },
+      {
+        "id": "Sito 3",
+        "name": "Lacoste Yachting",
+        "src": "/",
+        "characteristics": ["Regular fit", 
+                            "Crew neck", 
+                            "Lacoste Yachting branding on chest", 
+                            "Other", 
+                            "Round neck", 
+                            "COTTON (100%)"]
+      }
+    ]
+  }
+}
+
+
+
+
